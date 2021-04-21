@@ -1,8 +1,15 @@
-export default function MessageInputArea() {
+export default function MessageInputArea(props) {
   return (
-    <form className="">
-      <input type="text" class="input" />
-      <button class="sendmsg-btn">🔥</button>
+    <form onSubmit={(e) => props.submitMessageForm(e)}>
+      <input
+        type="text"
+        value={props.message || ""}
+        className="input"
+        onChange={(e) => props.setMessages(e.target.value)}
+      />
+      <button className="sendmsg-btn" type="submit">
+        🔥
+      </button>
     </form>
   );
 }

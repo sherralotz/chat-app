@@ -23,8 +23,6 @@
 }
 .main-container {
   height: 100vh;
-  display: -webkit-flex;
-  display: flex;
 }
 /* ------------------ HEADER ------------------*/
 .header-container {
@@ -63,8 +61,10 @@
   height: 75vh;
   margin: 10vh 0;
   overflow-y: scroll;
+  display: -webkit-flex;
   display: flex;
-  width: 100%;
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
 .chatarea-container::-webkit-scrollbar {
   width: 0.25rem;
@@ -84,9 +84,31 @@
 .darkmode .chatarea-container::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
+.messagearea-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.darkmode .textdisplay {
+  color: #fff;
+}
+.sent {
+  /* -webkit-align-self: flex-end;
+  align-self: flex-end; */
+  flex-direction: row-reverse;
+}
+.textdisplay {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
 /* ------------------ INPUT AREA ------------------*/
-.messagearea-container {
+form {
   height: 10vh;
   position: fixed;
   bottom: 0;
@@ -106,13 +128,13 @@
   width: 100%;
 }
 .messagearea-container input {
-  line-height: 40px;
+  height: 40px;
   border-radius: 20em;
   width: 85%;
   font-size: 1.2rem;
   outline: none;
   float: left;
-  margin-left: 10px;
+  margin: 0 10px;
   padding: 10px;
 }
 .darkmode .messagearea-container input {
