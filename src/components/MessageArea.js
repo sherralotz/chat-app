@@ -3,31 +3,9 @@ import MessageDisplayList from "./MessageDisplayList";
 import MessageInputArea from "./MessageInputArea";
 
 export default function MessageArea() {
-  //  constructor(){
-  //    super();
-  //    this.state ={
-  //      messages: []
-  //    }
-  //    this.sendMessage = this.sendMessage.bind(this);
-  //    this.handleMessage = this.handleMessage.bind(this);
-  //  }
-  //  handleMessage(){
-  //     this.setState(prevState=>{
-
-  //     });
-  //  }
-  //  handleMessageInputChange(){
-  //     this.setState(prevState => {
-
-  //     });
-  //  }
-  //  sendMessage(){
-  //     const messages = this.state.messages;
-  //     console.log(messages);
-  //  }
   const messageTempList = [
-    { text: "hello", id: 1 },
-    { text: "hi", id: 2 },
+    { text: "hello", id: 1, msgLoggedInUser: false },
+    { text: "hi", id: 2, msgLoggedInUser: false },
   ];
   const [message, setMessages] = useState("");
   const [messageList, setMessageList] = useState(messageTempList);
@@ -38,13 +16,13 @@ export default function MessageArea() {
       ...messageList,
       {
         text: message,
+        msgLoggedInUser: true,
         createdOn: new Date().toString(),
         id: messageList.length + 1,
       },
     ]);
     setMessages("");
   };
-  //console.log(messageList);
   return (
     <div className="messagearea-container">
       <MessageDisplayList messageList={messageList} />

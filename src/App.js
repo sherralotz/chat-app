@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import MessageArea from "./components/MessageArea";
 import React from "react";
+import "font-awesome/css/font-awesome.min.css";
 
 class App extends React.Component {
   constructor() {
