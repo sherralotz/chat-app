@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/chat-app/static/css/main.cea5bef6.chunk.css",
-    "main.js": "/chat-app/static/js/main.ac62d978.chunk.js",
-    "main.js.map": "/chat-app/static/js/main.ac62d978.chunk.js.map",
-    "runtime-main.js": "/chat-app/static/js/runtime-main.e3caa138.js",
-    "runtime-main.js.map": "/chat-app/static/js/runtime-main.e3caa138.js.map",
-    "static/js/2.9cf4327b.chunk.js": "/chat-app/static/js/2.9cf4327b.chunk.js",
-    "static/js/2.9cf4327b.chunk.js.map": "/chat-app/static/js/2.9cf4327b.chunk.js.map",
-    "static/js/3.1f67806a.chunk.js": "/chat-app/static/js/3.1f67806a.chunk.js",
-    "static/js/3.1f67806a.chunk.js.map": "/chat-app/static/js/3.1f67806a.chunk.js.map",
+    "main.css": "/chat-app/static/css/main.36143620.chunk.css",
+    "main.js": "/chat-app/static/js/main.11537edd.chunk.js",
+    "main.js.map": "/chat-app/static/js/main.11537edd.chunk.js.map",
+    "runtime-main.js": "/chat-app/static/js/runtime-main.c27982e6.js",
+    "runtime-main.js.map": "/chat-app/static/js/runtime-main.c27982e6.js.map",
+    "static/css/2.a48dc73b.chunk.css": "/chat-app/static/css/2.a48dc73b.chunk.css",
+    "static/js/2.a801af22.chunk.js": "/chat-app/static/js/2.a801af22.chunk.js",
+    "static/js/2.a801af22.chunk.js.map": "/chat-app/static/js/2.a801af22.chunk.js.map",
+    "static/js/3.4d999db1.chunk.js": "/chat-app/static/js/3.4d999db1.chunk.js",
+    "static/js/3.4d999db1.chunk.js.map": "/chat-app/static/js/3.4d999db1.chunk.js.map",
     "index.html": "/chat-app/index.html",
-    "static/css/main.cea5bef6.chunk.css.map": "/chat-app/static/css/main.cea5bef6.chunk.css.map",
-    "static/js/2.9cf4327b.chunk.js.LICENSE.txt": "/chat-app/static/js/2.9cf4327b.chunk.js.LICENSE.txt"
+    "static/css/2.a48dc73b.chunk.css.map": "/chat-app/static/css/2.a48dc73b.chunk.css.map",
+    "static/css/main.36143620.chunk.css.map": "/chat-app/static/css/main.36143620.chunk.css.map",
+    "static/js/2.a801af22.chunk.js.LICENSE.txt": "/chat-app/static/js/2.a801af22.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/chat-app/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.e3caa138.js",
-    "static/js/2.9cf4327b.chunk.js",
-    "static/css/main.cea5bef6.chunk.css",
-    "static/js/main.ac62d978.chunk.js"
+    "static/js/runtime-main.c27982e6.js",
+    "static/css/2.a48dc73b.chunk.css",
+    "static/js/2.a801af22.chunk.js",
+    "static/css/main.36143620.chunk.css",
+    "static/js/main.11537edd.chunk.js"
   ]
 }
