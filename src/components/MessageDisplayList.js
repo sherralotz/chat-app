@@ -1,5 +1,6 @@
 export default function MessageDisplayList(props) {
-  const { messageList } = props;
+  const { messageList, user } = props;
+  console.log(props);
   return (
     <div className="chatarea-container">
       {messageList.map((message) => {
@@ -11,7 +12,7 @@ export default function MessageDisplayList(props) {
             className={`textdisplay ${msgSentFromLoggedInUser}`}
             key={message.id}
           >
-            <img className="userimg" alt="User face"></img>
+            <img className="userimg" alt="User face" src={user.photoURL}></img>
             <p>{message.text}</p>
           </div>
         );

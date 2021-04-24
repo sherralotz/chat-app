@@ -27,7 +27,12 @@ export default function Header(props) {
         </a>
         <div className="divider"></div>
         <a href="#">Switch User</a>
-        <a href="#" onClick={() => props.changeColorMode()}>
+        <a
+          href="#"
+          onClick={() => {
+            props.logoutUser();
+          }}
+        >
           Sign Out
         </a>
       </div>

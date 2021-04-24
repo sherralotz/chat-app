@@ -169,6 +169,7 @@ div[role="menu"] a {
   flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
+  min-height: 100vh;
 }
 .darkmode .textdisplay {
   color: #fff;
@@ -222,6 +223,14 @@ p {
   color: #fff;
   text-align: center;
 }
+.signin-btn {
+  margin: 0 auto;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ff0545;
+}
 /* ------------------ INPUT AREA ------------------*/
 form {
   height: 10vh;
@@ -269,9 +278,9 @@ form {
   margin-right: 10px;
   color: #fff;
 }
-.darkmode .sendmsg-btn {
+.darkmode .primary-btn {
   background-color: #ff3662;
 }
-.lightmode .sendmsg-btn {
+.lightmode .primary-btn {
   background-color: #ff0545;
 }

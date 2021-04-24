@@ -10,7 +10,7 @@ export default function MessageInputArea(props) {
         className="input"
         onChange={(e) => props.setMessages(e.target.value)}
       />
-      <button className="sendmsg-btn" type="submit">
+      <button className="sendmsg-btn primary-btn" type="submit">
         <FontAwesomeIcon icon={faPaperPlane} />
       </button>
     </form>
