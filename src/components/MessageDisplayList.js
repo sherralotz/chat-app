@@ -11,7 +11,7 @@ export default function MessageDisplayList(props) {
             className={`textdisplay ${msgSentFromLoggedInUser}`}
             key={message.id}
           >
-            <img></img>
+            <img className="userimg" alt="User face"></img>
             <p>{message.text}</p>
           </div>
         );

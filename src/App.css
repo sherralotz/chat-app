@@ -27,6 +27,9 @@
 button {
   outline: none;
 }
+button:hover {
+  cursor: pointer;
+}
 /* ------------------ HEADER ------------------*/
 .header-container {
   height: 10vh;
@@ -57,6 +60,10 @@ button {
 .header-title {
   float: left;
   margin-top: 15px;
+  margin-left: 5px;
+}
+.header-title img {
+  width: 80px;
 }
 .header-btn {
   width: 40px;
@@ -98,7 +105,7 @@ div[role="menu"] {
   will-change: transform;
   position: absolute;
   width: fit-content;
-  top: calc(100% + (-32px));
+  top: calc(100% + (-15px));
   right: 15px;
   margin: 0.8rem auto auto;
   z-index: 2;
@@ -106,7 +113,7 @@ div[role="menu"] {
 }
 div[role="menu"] a {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.25rem;
   color: #29779e;
   text-decoration: none;
@@ -114,8 +121,18 @@ div[role="menu"] a {
   outline: 0;
   border: 0.1rem solid transparent;
   border-radius: 0.2rem;
+  user-select: none;
 }
-
+.menuoption {
+  display: inline-flex;
+  top: -5px;
+  position: relative;
+  margin-left: 20px;
+}
+.divider {
+  border-top: 1px solid #ebebec;
+  margin: 5px -17px;
+}
 /* ------------------ CHAT AREA ------------------*/
 .chatarea-container {
   padding: 10px;
@@ -189,7 +206,7 @@ div[role="menu"] a {
   -webkit-align-items: center;
   align-items: center;
 }
-img {
+.userimg {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -250,6 +267,7 @@ form {
   border-radius: 100px;
   outline: none;
   margin-right: 10px;
+  color: #fff;
 }
 .darkmode .sendmsg-btn {
   background-color: #ff3662;

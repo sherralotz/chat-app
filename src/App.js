@@ -18,7 +18,6 @@ class App extends React.Component {
     this.setState((prevState) => {
       return { isLightMode: !prevState.isLightMode };
     });
-    console.log("B", this.state);
   }
 
   render() {
@@ -26,7 +25,10 @@ class App extends React.Component {
     return (
       <div className={`app-container ${colorMode}`}>
         <div className="main-container">
-          <Header changeColorMode={this.changeColorMode} />
+          <Header
+            changeColorMode={this.changeColorMode}
+            colorMode={!this.state.isLightMode}
+          />
           <MessageArea />
         </div>
       </div>

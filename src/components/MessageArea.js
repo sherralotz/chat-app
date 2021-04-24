@@ -12,16 +12,18 @@ export default function MessageArea() {
 
   const submitMessageForm = (e) => {
     e.preventDefault();
-    setMessageList([
-      ...messageList,
-      {
-        text: message,
-        msgLoggedInUser: true,
-        createdOn: new Date().toString(),
-        id: messageList.length + 1,
-      },
-    ]);
-    setMessages("");
+    if (message.trim()) {
+      setMessageList([
+        ...messageList,
+        {
+          text: message,
+          msgLoggedInUser: true,
+          createdOn: new Date().toString(),
+          id: messageList.length + 1,
+        },
+      ]);
+      setMessages("");
+    }
   };
   return (
     <div className="messagearea-container">

@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+
 export default function MessageInputArea(props) {
   return (
     <form onSubmit={(e) => props.submitMessageForm(e)}>
@@ -8,7 +11,7 @@ export default function MessageInputArea(props) {
         onChange={(e) => props.setMessages(e.target.value)}
       />
       <button className="sendmsg-btn" type="submit">
-        🔥
+        <FontAwesomeIcon icon={faPaperPlane} />
       </button>
     </form>
   );
