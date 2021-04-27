@@ -9,7 +9,7 @@ import "firebase/firestore";
 import "firebase/auth";
 
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useCollectionData } from "react-firebase-hooks/firestore";
+// import { useCollectionData } from "react-firebase-hooks/firestore";
 
 if (!firebase.apps.length) {
   firebase.initializeApp({
@@ -25,15 +25,14 @@ if (!firebase.apps.length) {
   firebase.app();
 }
 
-const auth = firebase.auth(),
-  firestore = firebase.firestore();
+const auth = firebase.auth();
 
 export default function App() {
   const [isLightMode, setLightMode] = useState(false);
   const [user] = useAuthState(auth);
 
   //console.log(user);
-  const colorMode = isLightMode ? "lightmode" : "darkmode";
+  const isColorLightMode = isLightMode ? "lightmode" : "darkmode";
   const logoutUser = () => {
     firebase.auth().signOut();
   };
@@ -50,17 +49,21 @@ export default function App() {
   }
 
   return (
-    <div className={`app-container ${colorMode}`}>
+    <div className={`app-container ${isColorLightMode}`}>
       <div className="main-container">
         <Header
           changeColorMode={() => {
             setLightMode(!isLightMode);
           }}
           logoutUser={logoutUser}
-          colorMode={!isLightMode}
+          isColorLightMode={isLightMode}
         />
         <div className="messagearea-container">
-          {user ? <MessageArea user={user} /> : <SignIn />}
+          {user ? (
+            <MessageArea auth={auth} user={user} firebase={firebase} />
+          ) : (
+            <SignIn />
+          )}
         </div>
       </div>
     </div>

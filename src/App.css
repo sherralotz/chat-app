@@ -284,3 +284,7 @@ form {
 .lightmode .primary-btn {
   background-color: #ff0545;
 }
+
+.react-confirm-alert-overlay.darkmode {
+  background: rgb(30 30 30 / 90%);
+}
